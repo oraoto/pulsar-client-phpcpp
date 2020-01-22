@@ -2,6 +2,7 @@
 
 #include <phpcpp.h>
 #include <pulsar/Consumer.h>
+#include <pulsar/ConsumerType.h>
 
 class Consumer : public Php::Base {
 

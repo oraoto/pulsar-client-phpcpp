@@ -18,7 +18,6 @@ class Message : public Php::Base {
     // Php::Value getMessageId();
     // Php::Value getPartitionKey(Php::Parameters &params);
     // Php::Value hasPartitionKey();
-
 };
 
 void registerMessage(Php::Namespace &pulsarNamespace);

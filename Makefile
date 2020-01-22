@@ -1,6 +1,6 @@
 CPP             = g++
 RM              = rm -f
-CPP_FLAGS       = -Wall -c -I. -O2 -std=c++11
+CPP_FLAGS       = -Wall -c -I. -g -std=c++11
 
 LD              = g++
 LD_FLAGS        = -Wall -shared -O2
@@ -17,5 +17,5 @@ ${RESULT}: ${OBJECTS}
 clean:
 	${RM} *.obj *~* ${OBJECTS} ${RESULT}
 
-${OBJECTS}:
-	${CPP} ${CPP_FLAGS} -fpic -o $@ ${@:%.o=%.cpp}
+src/%.o: src/%.cpp
+	${CPP} ${CPP_FLAGS} -fpic -c $< -o $@

@@ -5,10 +5,10 @@
 
 class Client : public Php::Base {
 
-public:
+  public:
     pulsar::Client *client;
 
-    ~Client() { }
+    ~Client() {}
 
     void __construct(Php::Parameters &params);
 

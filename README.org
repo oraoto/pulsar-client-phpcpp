@@ -1,0 +1,20 @@
+* Apache Pulsar client library for PHP
+
+** Build
+
+Requirements:
+
+- [[https://github.com/apache/pulsar/tree/master/pulsar-client-cpp/][Pulsar C++ client library]]
+- [[https://github.com/CopernicaMarketingSoftware/PHP-CPP][PHP-CPP]]
+- PHP 7.4
+
+Compilation:
+
+#+begin_src
+git clone git@github.com:oraoto/pulsar-client-phpcpp.git
+make -j4
+#+end_src
+
+** Usage
+
+See [[./examples][examples]] for more examples.
